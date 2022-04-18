@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/*Colores y Fuentes de letra*/
+.hover, .fondo2 .bitcoin_img .btc_img:hover, .fondo2 .imagenes .img .btc:hover, .fondo3 .ethereum_img .ether_img:hover, .fondo3 .imagenes .img .eth:hover, .fondo5 .binance .binance_img:hover, .fondo5 .imagenes .img .bnb:hover { color: white; background-color: white; border-color: white; -webkit-transform: translate(2px, 4px); transform: translate(2px, 4px); -webkit-transition: all 0.8s; transition: all 0.8s; }
+
+* { margin: 0px; padding: 0px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*Pagina Principal index.html*/
+.fondo { background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center center; background-image: url(../carpetas/imagen/alien.jpg); }
+
+.fondo .titulo { color: white; padding: 10rem 10rem 10rem 10rem; font-size: 4rem; font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; text-align: center; }
+
+@media (max-width: 425px) { .fondo .titulo { font-size: 2.5rem; text-align: center; padding: 5rem 5rem 5rem 5rem; } }
+
+/*Navegador Principal*/
+.nombre { color: lime; text-align: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link { color: white; }
+
+.navbar-light .navbar-nav .nav-link { color: white; }
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover { color: white; }
+
+.navbar-light .navbar-nav .nav-link:hover { color: white; background-color: lime; border-color: lime; }
+
+.bg-color { background-color: black !important; }
+
+.dropdown-menu { font-size: 1rem; color: white; text-align: left; list-style: none; background-color: black; background-clip: padding-box; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 0.25rem; }
+
+.dropdown-item { display: block; width: 100%; padding: 0.25rem 1rem; clear: both; font-weight: 400; color: white; text-align: inherit; text-decoration: none; white-space: nowrap; background-color: transparent; border: 0; }
+
+.btn-primary { font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; background-color: green; border-radius: 30px; border-color: white; }
+
+.btn-primary:hover { -webkit-transform: translate(5px, 9px); transform: translate(5px, 9px); -webkit-transition: all 0.8s; transition: all 0.8s; color: white; background-color: lime; border-color: lime; font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+
+.navbar-toggler { background-color: lime; }
+
+/*Diseño del footer*/
+.footer { width: 100%; background-color: #000000; color: white; font-family: Arial, Helvetica, sans-serif; margin-top: 80px; }
+
+.footer .grupo1 { width: 100%; max-width: 1200px; margin: auto; display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr 1fr; grid-template-columns: 1fr 1fr 1fr; grid-gap: 50px; padding: 10px 0px; }
+
+.footer .grupo1 .figure { width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.footer .grupo1 .figure .alien { width: 250px; }
+
+.footer .grupo1 .caja .sobre { margin-bottom: 25px; font-size: 20px; text-align: center; }
+
+.footer .grupo1 .caja .info { margin-bottom: 10px; text-align: justify; }
+
+.footer .grupo1 .caja .siguenos { margin-bottom: 25px; font-size: 20px; text-align: center; }
+
+.footer .grupo1 .caja .redes a { font-size: 25px; display: inline-block; text-decoration: none; width: 45px; height: 45px; line-height: 45px; color: white; margin-left: 20px; background-color: #0f0f0f; text-align: center; -webkit-transition: all 300ms ease; transition: all 300ms ease; border-radius: 10px; }
+
+.footer .grupo1 .caja .redes a:hover { color: lime; }
+
+.footer .grupo-2 { background-color: #0f0f0f; text-align: center; color: white; }
+
+.footer .grupo-2 small { font-size: 15px; }
+
+@media screen and (max-width: 800px) { .footer .grupo1 { width: 90%; -ms-grid-columns: 1fr; grid-template-columns: 1fr; grid-gap: 30px; padding: 35px 0px; } }
+
+/*PAGINA PRINCIPAL BITCOIN.HTML*/
+.fondo2 { background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center center; background-image: url(../carpetas/imagen/kanchanara-JSryDer_TOk-unsplash.jpg); }
+
+.fondo2 .titulo2 { color: lime; text-align: center; }
+
+.fondo2 .subtitulo { color: #eeff00; text-align: center; padding-bottom: 10px; }
+
+.fondo2 .historia { color: white; text-align: left; padding: 10px; }
+
+.fondo2 .parrafo1 { color: white; text-align: justify; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 1.2rem; }
+
+.fondo2 .bitcoin_img { width: auto; height: auto; margin: 15px 0px 25px 0px; border-radius: 40px; }
+
+.fondo2 .bitcoin_img .btc_img { width: 470px; padding: 15px; border-radius: 40px; }
+
+.fondo2 .imagenes { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.fondo2 .imagenes .img { -webkit-box-flex: 30%; -ms-flex: 30%; flex: 30%; }
+
+.fondo2 .imagenes .img .btc { max-width: 100%; padding: 10px; border-radius: 100px; }
+
+@media (max-width: 768px) { .imagenes { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+
+/*Pagina Principal Contacto.html*/
+.fondo4 { background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center center; color: white; background-image: url(../carpetas/imagen/fantasy-4523944_19202.jpg); font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+
+.fondo4 .contac .contac_info { font-size: 2rem; text-align: center; color: lime; padding: 30px 10px 10px 10px; }
+
+.fondo4 .formulario { width: 90%; margin-left: 30px; border-left: solid; }
+
+.botones { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 40px; }
+
+.botones .enviar { padding-right: 40px; }
+
+.btn-green { color: white; background-color: black; border-color: #000000; }
+
+.btn-green:hover { color: white; background-color: lime; border-color: lime; }
+
+.btn-primary { font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; background-color: green; border-radius: 30px; }
+
+.btn-primary:hover { -webkit-transform: translate(5px, 9px); transform: translate(5px, 9px); -webkit-transition: all 0.8s; transition: all 0.8s; color: white; background-color: lime; border-color: lime; font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+
+/*PAGINA PRINCIPAL Ethereum.HTML*/
+.fondo3 { background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center center; background-image: url(../carpetas/imagen/shubham-dhage-dVcXOkpp3fk-unsplash.jpg); }
+
+.fondo3 .titulo3 { color: lime; text-align: center; }
+
+.fondo3 .subtitulo1 { color: #eeff00; text-align: center; padding-bottom: 10px; }
+
+.fondo3 .historia2 { color: white; text-align: left; padding: 10px; }
+
+.fondo3 .parrafo2 { color: white; text-align: justify; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 1.2rem; }
+
+.fondo3 .ethereum_img { width: auto; height: auto; margin: 15px 0px 25px 0px; border-radius: 40px; }
+
+.fondo3 .ethereum_img .ether_img { width: 470px; padding: 15px; border-radius: 40px; }
+
+.fondo3 .imagenes { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.fondo3 .imagenes .img { -webkit-box-flex: 30%; -ms-flex: 30%; flex: 30%; }
+
+.fondo3 .imagenes .img .eth { max-width: 100%; padding: 10px; border-radius: 100px; }
+
+/*PAGINA PRINCIPAL BNB.HTML*/
+.fondo5 { background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center center; background-image: url(../carpetas/imagen/bnb.jpg); }
+
+.fondo5 .titulo4 { color: lime; text-align: center; }
+
+.fondo5 .subtitulo4 { color: #eeff00; text-align: center; padding-bottom: 10px; }
+
+.fondo5 .historia4 { color: white; text-align: left; padding: 10px; }
+
+.fondo5 .parrafo4 { color: white; text-align: justify; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 1.2rem; }
+
+.fondo5 .binance { width: auto; height: auto; margin: 15px 0px 25px 0px; border-radius: 50px; }
+
+.fondo5 .binance .binance_img { width: 470px; padding: 15px; border-radius: 40px; }
+
+.fondo5 .imagenes { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.fondo5 .imagenes .img { -webkit-box-flex: 30%; -ms-flex: 30%; flex: 30%; }
+
+.fondo5 .imagenes .img .bnb { max-width: 100%; padding: 10px; border-radius: 100px; }
+
+/*Pagina Principal Trabaja con Nosotros*/
+.fondo7 { background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center center; background-image: url(../carpetas/imagen/trabajo.jpg); }
+
+.fondo7 .trabajo { width: 100%; height: auto; }
+
+.fondo7 .trabajo .lugar { color: white; padding: 10px; }
+
+.fondo7 .trabajo p { color: white; text-align: justify; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 1.2rem; }
+
+.fondo7 .titulo_trabajo { color: lime; text-align: center; font-size: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+
+.fondo7 .lista_trabajo { width: 90%; height: auto; border-left-style: solid; color: white; margin-left: 20px; }
+
+.fondo7 .lista_trabajo ul li { color: #eeff00; font-size: 1.5rem; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 10px; margin-left: 50px; list-style: armenian; }
+
+.fondo7 .lista_trabajo ul li a { color: white; }
+
+.fondo7 .lista_trabajo ul .lugar { color: lime; }
+
+@media (max-width: 425px) { .fondo7 .titulo_trabajo { margin: 19px; }
+  .fondo7 .lista_trabajo { margin-left: 10px; }
+  .fondo7 .lista_trabajo ul { padding-left: 10px; }
+  .fondo7 .lista_trabajo ul li { margin-top: 10px; margin-left: 20px; padding: 0px; margin-right: auto; } }
+
+/*Pagina Principal Productos*/
+.fondo8 { background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center center; background-image: url(../carpetas/imagen/productos1.jpg); }
+
+.fondo8 .title_productos { color: lime; text-align: center; padding: 30px; font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+
+.fondo8 .row { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-top: calc(-1 * var(--bs-gutter-y)); margin-right: 0px; margin-left: 0px; }
+
+.fondo8 .tarjeta { border-radius: 40px; }
+
+.fondo8 .tarjeta img { border-radius: 40px; padding: 15px; }
+
+.fondo8 .tarjeta img:hover { -webkit-transform: translate(1px, 8px); transform: translate(1px, 8px); -webkit-transition: all 0.8s; transition: all 0.8s; }
+/*# sourceMappingURL=estilo.css.map */

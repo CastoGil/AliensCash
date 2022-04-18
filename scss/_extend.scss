@@ -1,0 +1,7 @@
+.hover{
+    color: $color;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    transform: translate(2px, 4px);
+    transition: all 0.8s;
+}

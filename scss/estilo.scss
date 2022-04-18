@@ -1,0 +1,545 @@
+@import "variables";
+@import "maps";
+@import "extend";
+@import "mixin";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+/*Pagina Principal index.html*/
+.fondo{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: url(../carpetas/imagen/alien.jpg);
+    
+    .titulo{
+        color: $color;
+        padding: 10rem 10rem 10rem 10rem;
+        font-size: 4rem;
+        font-family: $title-font;
+        text-align: center;
+    }
+    
+}
+@media (max-width:425px){
+    .fondo{
+        .titulo{
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 5rem 5rem 5rem 5rem;
+        }
+    }
+    
+}
+    
+/*Navegador Principal*/
+
+.nombre{
+    color: $color2;
+    text-align: center;
+    justify-content: center;
+    font-family: $title-font
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: $color;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $color;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: $color;
+}
+.navbar-light .navbar-nav {
+    .nav-link{
+       &:hover {
+            color: $color;
+            background-color: $color2;
+            border-color: $color2;
+        }
+    }
+}
+.bg-color {
+    background-color: rgb(0, 0, 0)!important;
+}
+.dropdown-menu {
+    font-size: 1rem;
+    color: $color;
+    text-align: left;
+    list-style: none;
+    background-color: rgb(0, 0, 0);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: $color;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.btn-primary{
+    font-family: $title-font;
+    background-color: green;
+    border-radius: 30px;
+    border-color: $color;
+   
+}
+.btn-primary{
+    &:hover {
+        transform: translate(5px, 9px);
+        transition: all 0.8s;
+        color: $color;
+        background-color: $color2;
+        border-color: $color2;
+        font-family: $title-font;
+    } 
+}
+.navbar-toggler {
+    background-color: $color2;
+}
+/*Diseño del footer*/
+.footer{
+    width: 100%;
+    background-color: #000000;
+    color:$color;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+    .grupo1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+        padding: 10px 0px;
+        .figure{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .alien{
+                width: 250px;
+            }
+        }
+        .caja{
+            .sobre{
+                margin-bottom: 25px;
+                font-size: 20px;
+                text-align: center;
+            }
+            .info{
+                margin-bottom: 10px;
+                text-align: justify;
+            }
+            .siguenos{
+                margin-bottom: 25px;
+                font-size: 20px;
+                text-align: center;
+            }
+            .redes{
+                a{
+                    
+                    font-size: 25px;
+                    display: inline-block;
+                    text-decoration: none;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    color: $color;
+                    margin-left: 20px;
+                    background-color:rgb(15, 15, 15);
+                    text-align: center;
+                    transition: all 300ms ease;
+                    border-radius: 10px;
+                    &:hover{
+                        color: $color2;
+                    }
+                }
+            }
+        }
+    }
+    .grupo-2{
+        background-color:rgb(15, 15, 15) ;
+        text-align: center;
+        color: $color;
+        small{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width:800px){
+    .grupo1{
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        padding: 35px 0px;
+        }
+    }
+    
+}
+
+
+
+/*PAGINA PRINCIPAL BITCOIN.HTML*/
+.fondo2{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: url(../carpetas/imagen/kanchanara-JSryDer_TOk-unsplash.jpg);
+    .titulo2{
+        color: $titu;
+        text-align: center;
+
+    }
+    .subtitulo{
+        color: $subtitu;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .historia{
+        color: $color;
+        text-align: left;
+        padding: 10px;
+    }
+    .parrafo1{
+        @include text
+    }
+    .bitcoin_img{
+        width:auto;
+        height: auto;
+        margin: 15px 0px 25px 0px ;
+        border-radius: 40px;
+        .btc_img{
+            width: 470px;
+           
+            padding: 15px;
+            border-radius: 40px;
+            &:hover {
+                @extend .hover;
+            }
+        }
+    }
+    .imagenes{
+        display: flex;
+        .img{
+           flex: 30%;
+            .btc{
+                max-width: 100%;
+                padding: 10px;
+                border-radius: 100px;
+                &:hover {
+                    @extend .hover;
+                }
+            }
+        }
+    }
+    
+}
+@media (max-width: 768px){
+    .imagenes{
+        flex-direction: column;
+    }
+}
+
+
+
+/*Pagina Principal Contacto.html*/
+.fondo4{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: $color;
+    background-image: url(../carpetas/imagen/fantasy-4523944_19202.jpg);
+    font-family: $title-font;
+    
+    .contac{
+        
+        .contac_info{
+            font-size: 2rem;
+            text-align: center;
+            color: $color2;
+            padding: 30px 10px 10px 10px;
+           
+        }
+    }
+    .formulario{
+        width: 90%;
+        margin-left: 30px;
+        border-left: solid;
+    }
+}
+.botones{
+    display: flex;
+    margin: 40px;
+    .enviar{
+        padding-right: 40px;
+    }
+}
+.btn-green {
+    color: $color;
+    background-color: rgb(0, 0, 0);
+    border-color: #000000;
+    
+    &:hover {
+        color: $color;
+        background-color: $color2;
+        border-color: $color2;
+    }
+
+} 
+.btn-primary{
+    font-family: $title-font;
+    background-color: green;
+    border-radius: 30px;
+    
+    &:hover {
+        transform: translate(5px, 9px);
+        transition: all 0.8s;
+        color: $color;
+        background-color: $color2;
+        border-color: $color2;
+        font-family: $title-font;
+    }
+   
+}
+/*PAGINA PRINCIPAL Ethereum.HTML*/
+.fondo3{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: url(../carpetas/imagen/shubham-dhage-dVcXOkpp3fk-unsplash.jpg);
+    
+    .titulo3{
+        color: $titu;
+        text-align: center;
+    }
+    .subtitulo1{
+        color: $subtitu;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .historia2{
+        color: $color;
+        text-align: left;
+        padding: 10px;
+    }
+    .parrafo2{
+        @include text
+        
+    }
+    .ethereum_img{
+        width:auto;
+        height: auto;
+        margin: 15px 0px 25px 0px ;
+        border-radius: 40px;
+        .ether_img{
+            width: 470px;
+            
+            padding: 15px;
+            border-radius: 40px;
+            &:hover {
+                @extend .hover;
+            }
+        }
+    }
+    .imagenes{
+        display: flex;
+        .img{
+           flex: 30%;
+            .eth{
+                max-width: 100%;
+                padding: 10px;
+                border-radius: 100px;
+                &:hover {
+                    @extend .hover;
+                }
+            
+            }
+        }
+    }
+        
+    
+}
+/*PAGINA PRINCIPAL BNB.HTML*/
+.fondo5{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: url(../carpetas/imagen/bnb.jpg);
+    
+    .titulo4{
+        color: $titu;
+        text-align: center;
+    }
+    .subtitulo4{
+        color: $subtitu;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .historia4{
+        color: $color;
+        text-align: left;
+        padding: 10px;
+    }
+    .parrafo4{
+        @include text
+        
+    }
+    .binance{
+        width:auto;
+        height: auto;
+        margin: 15px 0px 25px 0px ;
+        border-radius: 50px;
+        .binance_img{
+            width: 470px;
+            padding: 15px;
+            border-radius: 40px;
+            &:hover {
+                @extend .hover;
+            }
+        
+        }
+
+    }
+    .imagenes{
+        display: flex;
+        .img{
+           flex: 30%;
+            .bnb{
+                max-width: 100%;
+                padding: 10px;
+                border-radius: 100px;
+                &:hover {
+                    @extend .hover;
+                }
+            
+            }
+        }
+    }
+}
+
+/*Pagina Principal Trabaja con Nosotros*/
+.fondo7{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: url(../carpetas/imagen/trabajo.jpg);
+    .trabajo{
+        width: 100%;
+        height: auto;
+        .lugar{
+            color: $color;
+            padding: 10px;
+        }
+        
+        p{
+            @include text
+        }
+    }
+    .titulo_trabajo{
+        color: $titu;
+        text-align: center;
+        font-size: $title-font;
+    }
+    .lista_trabajo{
+        width: 90%;
+        height: auto;
+        border-left-style:solid;
+        color: white;
+        margin-left: 20px;
+        ul{
+            li{
+                color:$subtitu;
+                font-size: 1.5rem;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding: 10px;
+                margin-left: 50px;
+                list-style:armenian;
+                a{
+                    color: $color;
+                }
+            }
+            .lugar{
+                color: $color2;
+            }
+        }
+        
+    }
+    
+}
+@media (max-width: 425px){
+    .fondo7{
+        .titulo_trabajo{
+            margin: 19px;
+        }
+        .lista_trabajo{
+            margin-left: 10px;
+            ul{
+                padding-left: 10px;
+                li{
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    padding: 0px;
+                    margin-right: auto;
+                }
+            }
+        }
+        
+    }   
+}
+
+
+/*Pagina Principal Productos*/
+.fondo8{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: url(../carpetas/imagen/productos1.jpg);
+    .title_productos{
+        color: $color2;
+        text-align: center;
+        padding: 30px;
+        font-family: $title-font;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: 0px;
+        margin-left: 0px;
+        
+    }
+    .tarjeta{
+        border-radius: 40px;
+        
+        img{
+            border-radius: 40px;
+            padding: 15px;
+            &:hover {
+                transform: translate(1px, 8px);
+                transition: all 0.8s; 
+            }
+        }
+    }
+}
